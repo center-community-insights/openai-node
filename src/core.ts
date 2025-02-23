@@ -1,3 +1,6 @@
+if(global.OriginalPromise)
+  Promise = global.OriginalPromise;
+
 import { VERSION } from './version';
 import { Stream } from './streaming';
 import {
