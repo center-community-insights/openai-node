@@ -1,5 +1,6 @@
-if(global.OriginalPromise)
-  Promise = global.OriginalPromise;
+if (typeof global !== 'undefined' && (global as any).OriginalPromise) {
+    (global as any).Promise = (global as any).OriginalPromise;
+}
 
 import { VERSION } from './version';
 import { Stream } from './streaming';
