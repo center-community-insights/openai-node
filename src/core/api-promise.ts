@@ -1,4 +1,7 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
+if (typeof global !== 'undefined' && (global as any).OriginalPromise) {
+    (global as any).Promise = (global as any).OriginalPromise;
+}
 
 import { type OpenAI } from '../client';
 
